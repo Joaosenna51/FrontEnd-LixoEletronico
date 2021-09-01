@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 50px 0px;
+  border-bottom: px solid #eee;
+  background-color: rgb(32, 190, 190);
+}
+header h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-size: 20pt;
+  font-weight: lighter;
+}
+nav {
+  padding: 20px 0px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  width: 100px;
+  padding: 10px 0px;
+  text-align: center;
+}
+nav ul li a {
+  font-weight: bold;
+  font-family: arial;
+  text-decoration: none;
+  color: black;
+}
+main {
+  margin: 0px 100px;
+  padding: 10px;
+}
+main #container {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 30pt;
+  text-align: justify;
+}
+main #container img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+}
+main p {
+  /* trabalhar o bloco do texto, reduzir a margem esquerda e direita */
+  margin-left: 100px;
+  margin-right: 100px;
+  /* entre um parágrafo e o outro colocar um margem inferior, distanciamento entre os parágrafos */
+  margin-bottom: 30px;
+  /* justificado */
+  text-align: justify;
+  font-size: 12pt;
+  /* altura da linha (efeito de espaçamento entre linhas)*/
+  line-height: 25pt;
+  font-family: "Ubuntu", sans-serif;
+}
+main h2 {
+  color: red;
+  font-family: "Kaushan Script", cursive;
+  font-size: 15pt;
+  margin: 50px;
+  /* uma linha fina */
+  border-bottom: rgb(32, 190, 190) 1px solid;
+  text-align: center;
+}
+
+main #restrito ul li a {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(162, 175, 175);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 25px;
+  /* -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000; */
+  border: solid #050607 1.5px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+main #restrito ul li {
+  background-color: #fff;
+  display: inline-block;
+  margin: 25px 50px 40px;
+  padding: 0px;
+  transition: ease 0.5s;
+  text-align: center;
+  align-items: center;
+}
+/* ===================FOOTER - HOME ========================= */
+footer {
+  background-color: rgb(32, 190, 190);
+  /* aplicar margem interna */
+  padding: 40px;
+  /* empurra a caixa para baixo */
+  padding-top: 60px;
+  /* altura do rodapé */
+  height: 200px;
+}
+
+footer #end {
+  color: #fff;
+  font-family: verdana;
+  font-size: 10pt;
+  float: left;
+  /* onde começa e onde termina 
+     border: solid 1px green; */
+}
+footer #end {
+  text-align: right;
+  padding-right: 50px;
+  padding-top: 10px;
+  margin-left: 200px;
+}
+
+footer #redes ul {
+  /* para tirar as bolinhas */
+  list-style: none;
+}
+
+footer #redes ul li {
+  display: inline-block;
+}
+
+footer #redes ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer #redes ul li a i {
+  font-size: 45px;
+  color: #fff;
+  padding-bottom: 40px;
+  float: right;
+}
+
+/*          FORMULÁRIO CADASTRO DAS NOTÍCIAS       */
+
+main #container #cadastro {
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(238, 230, 230);
+  /* alinhar ao centro  */
+  margin: 0 auto;
+  margin-bottom: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border-style: groove;
+  border-top-width: 7px;
+  border-bottom-width: 7px;
+  border-left-width: 7px;
+  border-right-width: 7px;
+  border-color: chartreuse;
+}
+main #container #cadastro input,
+main #container #cadastro textarea,
+main #container #cadastro button {
+  display: block;
+  margin-bottom: 10px;
+  width: 90%;
+  padding: 5px;
+}
+
+/* NOTÍCIAS  */
+
+main #container #listarNoticias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+main #container #listarNoticias #noticia {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+#materia {
+  display: none;
+  display: flex;
+}
+
+main #container #linha #foto {
+  width: 20px;
+  height: 20px;
+  padding: 0px 0px 0px 0px;
+}
+
+main #container #linha #foto,
+main #container #linha #titulonoticia,
+main #container #linha #autornoticia,
+main #container #linha #datapublicacao,
+main #container #linha #texto,
+main #container #linha #atualizar,
+main #container #linha #apagar {
+  font-family: arial;
+  padding-top: 10px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  flex: 1;
+  padding-top: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+main #container #linha #atualizar {
+  margin-left: 650px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+main #container #linha #apagar {
+  margin-left: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+main #container #linha #foto img {
+  width: 15%;
+  height: auto;
+}
+
+#fundo h3 {
+  font-family: arial;
+  font-size: 15pt;
+  position: absolute;
+  bottom: 380px;
+  text-align: center;
+}
+#fundo {
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  background-image: url("../img/fundo.gif");
+  background-position: center center;
+  font-family: arial;
+  font-size: 20pt;
+  text-align: center;
+}
+main #container #linha #atualizar a,
+main #container #linha #apagar a {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(32, 190, 190);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 20px;
+  /* -webkit-box-shadow: 1px 1px 15px 0 #000000;
+  -moz-box-shadow: 1px 1px 15px 0 #000000;
+  box-shadow: 1px 1px 15px 0 #000000;
+  text-shadow: 1px 1px 15px #000000; */
+  border: solid #337fed 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main #container #linha #nome,
+main #container #linha #email,
+main #container #linha #telefone,
+main #container #linha #login,
+main #container #linha #senha,
+main #container #linha #atualizar,
+main #container #linha #apagar {
+  font-family: arial;
+  padding-top: 10px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+main #container #linha #nome,
+main #container #linha #email,
+main #container #linha #telefone,
+main #container #linha #assunto,
+main #container #linha #mensagem,
+main #container #linha #apagar {
+  font-family: arial;
+  padding-top: 10px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}

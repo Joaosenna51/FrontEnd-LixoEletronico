@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha</title>
+    <link rel="stylesheet" href="css/front.css">
+</head>
+<body>
+    <header>
+        <h1>Lixo Eletrônico</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="usuario.html">Contato</a></li>
+            <li><a href="restrito.html" class="restrito">Restrito</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="container">
+            <h2>Atualizar os dados do administrador</h2>
+            <form onsubmit="return false" id="cadastro">
+                <input type="text" id="nome" placeholder="Nome"required>
+                <input type="text" id="email" placeholder="E-mail" required>
+                <input type="text" id="telefone" placeholder="Telefone" required>
+                <input type="text" id="login" placeholder="Login" required>
+                <input type="text" id="senha" placeholder="Senha" required>
+                <button id="btnAtualizar">Atualizar administrador</button>
+            </form>
+        </div>
+    </main>
+
+<script src="js/atualizaradministrador.js"></script>
+</body>
+
+</html>
